@@ -9,6 +9,7 @@ body{
     margin:-1px;
 }
 nav{
+    height:70px;
     margin:-5px;
     display:flex;
     flex-direction: row;
