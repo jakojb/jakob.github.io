@@ -22,8 +22,9 @@ ul{
 
 }
 
-li{
+li{ padding:5px;
     margin:5px;
     background-color: blue;
     color:white;
+    border-radius:10px;
 }
