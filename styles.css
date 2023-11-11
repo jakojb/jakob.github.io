@@ -1,14 +1,19 @@
 h1{
-color:blue;
+color:rgb(255, 255, 255);
 font-size:bold;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
-    width:2100px;
+    width:1324px;
     height:100%;
-    margin:-1px;
+    margin:5px;
+
+
+    
 }
-nav{
+nav{width:100%;
+    text-align: center;
+    padding-left:20px;
     height:70px;
     margin:-5px;
     display:flex;
@@ -16,19 +21,53 @@ nav{
     background-color:rgb(12, 12, 76);
 }
 
-ul{
+ul{ text-align: center;
     display:flex;
     
     flex-direction: row;
     list-style: none;
 
 }
-
+h1{
+    margin-top:15px;
+}
 li{ 
     margin:5px;
-    padding:15px;
-    border-radius:10px;
-    background-color: blue;
+    padding:5px;
+    border-radius:5px;
+    background-color: rgb(9, 9, 124);
     color:white;
     border-radius:10px;
+}
+
+/* Für Chrome, Safari und Opera */
+
+/* Track */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #3498db; /* Ändere diese Farbe nach deinen Wünschen */
+}
+
+/* Handle bei Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #2980b9; /* Ändere diese Farbe nach deinen Wünschen */
+}
+
+/* Track bei Hover */
+::-webkit-scrollbar-track:hover {
+    background-color: #f1f1f1; /* Ändere diese Farbe nach deinen Wünschen */
+}
+
+/* Corner */
+::-webkit-scrollbar-corner {
+    background-color: #3498db; /* Ändere diese Farbe nach deinen Wünschen */
+}
+
+
+::-ms-thumb{
+    color:blue;
 }

@@ -1,16 +1,202 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <title>
-      Welcome
-    </title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>Shop</li>
-      </ul>
-    </nav>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Portfolio | Jakob Hösl</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #132e8a;
+            color: #fff;
+        }
+
+        header {
+            background-color: rgb(22, 0, 101);
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        header h1 {
+            margin-left: -60px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #132e8a;
+            box-shadow: 20px 20px 20px rgba(57, 40, 40, 0.1);
+            border-radius: 10px;
+            color: #fff;
+        }
+
+        h2, h3 {
+            color: #fff;
+        }
+
+        h1 {
+            color: #fff;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #ccc;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            background-color: rgb(18, 18, 128);
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+            margin-bottom: 10px;
+            width: 30%;
+        }
+
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact form {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .contact label {
+            display: block;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .contact textarea {
+            width: 75%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(12, 12, 129);
+            color: #fff;
+        }
+
+        .contact input {
+            width: 75%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background-color: rgb(14, 14, 124);
+            color: #fff;
+        }
+
+        .contact button {
+            background-color: rgb(20, 20, 129);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #222;
+        }
+
+        @media screen and (max-width: 600px) {
+            .skills li {
+                width: 100%;
+            }
+
+            .contact form {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mein Portfolio</h1>
+</header>
+
+<section id="about">
+    <h2>Über mich</h2>
+    <p>Hallo! Mein Name ist Jakob Hösl, und habe ein starkes Interesse am Programmieren.
+        Ich liebe es, an der Schnittstelle von Kreativität und Technologie zu agieren. Die Möglichkeit, innovative Lösungen für komplexe Herausforderungen zu schaffen, treibt mich an. Durch meine Arbeit strebe ich danach, nicht nur Codes zu schreiben, sondern auch Geschichten zu erzählen und Erfahrungen zu gestalten.
+        Wenn ich nicht gerade mit Code beschäftigt bin, finde ich Ausgleich beim Imkern. Ich glaube fest daran, dass eine ausgewogene Work-Life-Balance entscheidend für kreatives Denken und langfristigen Erfolg ist.
+
+        Ich freue mich darauf, meine Fähigkeiten und Leidenschaften in einem dynamischen Team einzubringen und gemeinsam großartige Projekte umzusetzen.</p>
+</section>
+
+<section id="portfolio">
+    <h2>Projekte</h2>
+
+    <div class="portfolio-item">
+        <h3>Portfolio</h3>
+        <p>Mich vorstellen und meine Fähigkeiten zeigen </p>
+    </div>
+
+    <!-- Füge weitere Portfolio-Elemente nach Bedarf hinzu -->
+
+</section>
+
+<section id="skills" class="skills">
+    <h2>Fähigkeiten</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Next.js</li>
+        <li>Tailwind</li>
+    </ul>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Nachricht:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Nachricht senden</button>
+    </form>
+</section>
+
+</body>
 </html>
